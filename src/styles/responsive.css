@@ -1,0 +1,195 @@
+@media (max-width: 425px){
+    body {
+        background-image: url("./../img/fundo-de-luxo-realista_23-2149354576.avif");
+        background-size: cover;
+        background-position: center;
+        color: #000;
+        position: relative;
+        width: 100%;
+        height: 100%;
+      }
+      
+    /* adiciona uma camada semi-transparente sobre a imagem de fundo */
+    body::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(255, 255, 255, 0.6); /* define a cor da camada e a opacidade */
+        z-index: -1; /* posiciona a camada abaixo do conteúdo */
+      }
+      /* estilo para o nome na header */
+     header h1 {
+    font-family: 'Great Vibes', cursive; /* define a fonte */
+    font-size: 30px; /* define o tamanho da fonte */
+    color: #333; /* define a cor do texto */
+    margin-top: 20px; /* define a margem superior */
+      }
+     header{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      text-align: center;
+      padding-top: 10px;
+      padding-bottom: 15px;
+      }
+      /* estilo para o botão */
+     .btn {
+      /* width: 80px; */
+      background-color: #ffdab9; /* cor de fundo - um tom leve de dourado */
+      color: #333; /* cor do texto */
+      border: none; /* remove a borda do botão */
+      padding: 10px 20px; /* define o espaçamento interno do botão */
+      border-radius: 5px; /* adiciona um pouco de arredondamento aos cantos do botão */
+      font-size: 14px; /* tamanho da fonte do texto */
+      cursor: pointer; /* transforma o cursor em uma mãozinha ao passar sobre o botão */
+      box-shadow: 0 2px 4px rgba(0,0,0,0.2); /* adiciona uma sombra ao botão para dar profundidade */
+      font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+      text-align: center;
+    /* margin-right: 0px; */
+      }
+  
+      /* estilo para quando o botão é clicado */
+     .btn:active {
+    transform: translateY(1px); /* move o botão ligeiramente para baixo ao ser clicado para dar feedback */
+      }  
+      /* Define as propriedades da imagem */
+     .img{
+     width: 270px; /* Define a largura da imagem */
+     height: auto; /* Define a altura da imagem proporcionalmente */
+     border-radius: 50%; /* Deixa as bordas arredondadas */
+     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2); /* Adiciona uma sombra */
+     overflow: hidden; /* Esconde as partes da imagem que ficariam fora do círculo */
+       } 
+
+        /* Define as propriedades do conteúdo */
+       .content{
+        display: flex; /* Define a exibição em linha dos elementos filhos */
+        flex-wrap: wrap; /* Permite que o conteúdo seja ajustado em várias linhas */
+         justify-content: center; /* Alinha os elementos no centro horizontalmente */
+         align-items: center; /* Alinha os elementos no centro verticalmente */
+         box-sizing: border-box; /* Define a caixa da borda como a largura e altura padrão */
+         padding: 40px; /* Adiciona um espaçamento interno em todas as direções */
+         }
+
+        /* Define as propriedades do texto */
+       .contentText{
+         font-size: 18px; /* Define o tamanho da fonte */
+         text-align: center; /* Centraliza o texto */
+         box-sizing: border-box; /* Define a caixa da borda como a largura e altura padrão */
+         width: 300px; /* Define a largura do conteúdo */
+         line-height: 1.5; /* Define a altura da linha do texto */
+         margin-top: 20px; /* Adiciona uma margem superior para separar a imagem do texto */
+         }
+
+        /* Define as propriedades do parágrafo */
+       .contentText p{
+         font-family: Arial, Helvetica, sans-serif; /* Define a fonte do parágrafo */
+       }
+
+        /* Define as propriedades do título */
+       .contentText h1{
+         text-align: center; /* Centraliza o título */
+         font-family: 'Great Vibes', cursive; /* Define a fonte do título */
+         }  
+         .contacts{
+          padding-top: 35px;
+      }
+      .contacts h1{
+          text-align: center;
+          font-family: 'Great Vibes', cursive;
+          font-size: 40px;
+          margin-bottom: 20px;
+      }
+      .contactText{
+          font-size: 16px;
+          text-align: center;
+          box-sizing: border-box;
+          width: 80%;
+          max-width: 400px;
+          line-height: 1.5;
+          margin: 0 auto;
+          padding-bottom: 30px;
+      }
+      .contactText p{
+          font-family: Arial, Helvetica, sans-serif;
+      }
+      .redes-sociais {
+          display: flex;
+          justify-content: center;
+          margin: 0;
+          padding: 0;
+          margin-bottom: 20px;
+        }
+        
+        .redes-sociais li {
+          list-style: none;
+          display: inline-block;
+          margin-right: 10px;
+          width: 30px;
+          height: 30px;
+          border-radius: 50%;
+          background-color: #fff;
+          box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+          text-align: center;
+        }
+        
+        .redes-sociais a {
+          display: block;
+          width: 25px;
+          height: 25px;
+          background-color: #fff;
+          border-radius: 50%;
+          text-align: center;
+          box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+          transition: all 0.3s ease-in-out;
+        }
+        
+        .redes-sociais a:hover {
+          transform: scale(1.2);
+        }
+        
+        .redes-sociais img {
+          width: 100px;
+          height: auto;
+          margin-top: 5px;
+          filter: grayscale(100%) sepia(100%) hue-rotate(180deg) brightness(200%) saturate(1000%);
+        }
+        
+        .redes-sociais a:hover img {
+          filter: none;
+        }
+      
+      /* Media query para telas menores ou iguais a 425px */
+      @media only screen and (max-width: 425px) {
+        .contactText {
+          font-size: 14px;
+          padding-bottom: 20px;
+        }
+        .redes-sociais li {
+          margin-right: 5px;
+          width: 25px;
+          height: 25px;
+        }
+        .redes-sociais a {
+          width: 20px;
+          height: 20px;
+        }
+        .redes-sociais img {
+          width: 25px;
+          margin-top: 3px;
+        }
+      }  
+        .promotionText {
+          width: 90%;
+          margin-left: 5%;
+          margin-right: 5%;
+        }
+        .table {
+          margin-left: 5%;
+          margin-right: 5%;
+        }   
+}
